@@ -42,8 +42,8 @@ node ('master') {
 				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId:env.BTPCredentialID,usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]){
            
 				    writeJSON file: 'manifest.json', json: params.ManifestJsonFileContent
-							data1 = readJSON file:'manifest.json'
-							print(data1) 
+							data = readJSON file:'manifest.json'
+							print(data) 
 				    sh '''
 				    mv manifest.json ./config/
 				    '''
@@ -54,7 +54,7 @@ node ('master') {
 					{
 
 					print("Subaccount already exists.")
-					print("Deleting the subaccount")
+					
 					paramOrg = "${data.subaccounts[0].org_name}"
 	               print paramOrg
 					paramSpace = "${data.subaccounts[0].space_name}"
