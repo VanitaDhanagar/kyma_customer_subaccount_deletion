@@ -4,19 +4,19 @@
   echo "####################################################################################################"
   echo ""
 
-  echo "Step 1.1 Un-deploy ui"  
+  echo "Step 1.1 delete namespace backend"  
   kubectl delete namespace backend || true
 
-  echo "Step 1.2 Un-deploy broker"  
+  echo "Step 1.2 delete namespace day2-operations"  
   kubectl delete namespace day2-operations || true
 
-  echo "Step 1.3 Un-deploy Approuter"  
+  echo "Step delete namespace frontend"  
  kubectl delete namespace frontend || true
 
-  echo "Step 1.4 Un-deploy Backend"  
+  echo "Step 1.4 delete namespace integration"  
   kubectl delete namespace integration || true
   
-  echo "Step 1.5 Un-deploy day2-approuter"  
+  echo "Step 1.5 delete namespace  mock"  
   kubectl delete namespace  mock || true
 
    
