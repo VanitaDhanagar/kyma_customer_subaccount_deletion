@@ -82,7 +82,7 @@ node ('master')
  
                         sh '''
 						 git clone https://github.com/VanitaDhanagar/kyma_subaccount_deletion.git --branch 'main'
-				         mv ./kyma-day2-operations/* ./
+				         mv ./kyma_subaccount_deletion/* ./
 						 
                           kubectl version
 						  
