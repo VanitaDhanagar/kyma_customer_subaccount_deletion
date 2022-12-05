@@ -76,7 +76,7 @@ node ('master')
 
               withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId:'GithubTools',usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']])
               {
-		withKubeConfig([credentialsId: 'kubeconfigday2']) 
+		withKubeConfig([credentialsId: 'kubeconfigfileid']) 
 {
              
  
