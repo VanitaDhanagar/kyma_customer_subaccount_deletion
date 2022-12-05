@@ -83,7 +83,11 @@ node ('master')
                         sh '''
 						 git clone https://github.com/VanitaDhanagar/kyma_subaccount_deletion.git --branch 'main'
 				         mv ./kyma_subaccount_deletion/* ./
-						 
+
+						 echo "************ Login to kyma Manually for authentication On node windowskymanode *********************************"
+						  
+
+
                           kubectl version
 						  
                           kubectl config view
