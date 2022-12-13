@@ -60,6 +60,11 @@ node ('master')
 					print("Subaccount already exists.")
 					
 				     } 
+	                          else 
+				  {
+					  
+					  sh "exit 1"
+				  }
             
 				       
 }
