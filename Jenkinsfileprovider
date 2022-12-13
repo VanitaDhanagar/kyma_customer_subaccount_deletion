@@ -63,7 +63,7 @@ node ('master')
 	                          else 
 				  {
 					  
-					  sh "exit 1"
+					  sh "exit 0"
 				  }
             
 				       
